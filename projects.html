@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Проекты учеников — Байт-Бюро</title>
+  <meta name="description" content="Игры на Godot, Telegram-боты, сайты и модели ИИ, которые сделали подростки на курсах «Байт-Бюро». Фильтр по курсу и видео проекта.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Байт-Бюро">
+  <meta property="og:title" content="Проекты учеников — Байт-Бюро">
+  <meta property="og:description" content="Игры на Godot, Telegram-боты, сайты и модели ИИ, которые сделали подростки на курсах «Байт-Бюро». Фильтр по курсу и видео проекта.">
+  <meta property="og:url" content="https://tz-07-shkola-programmirovaniya-bayt-byuro.vercel.app/projects.html">
+  <meta property="og:image" content="https://tz-07-shkola-programmirovaniya-bayt-byuro.vercel.app/img/og-projects.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1B2240">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="logo" href="index.html" aria-label="Байт-Бюро, на главную">
+      <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>БАЙТ-БЮРО
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">☰</button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="courses.html">Курсы</a></li>
+          <li><a class="nav__link" href="projects.html" aria-current="page">Проекты учеников</a></li>
+          <li><a class="nav__link" href="schedule.html">Расписание</a></li>
+          <li><a class="nav__link" href="challenge.html">Задача дня</a></li>
+          <li><a class="nav__link" href="contacts.html">Запись и контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header__phone" href="tel:+79007070101" data-event="contact_click" data-contact-type="phone">+7 (900) 707-01-01</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>Проекты учеников</h1>
+    <p>Игры, боты и сайты, которые ребята сделали на курсах. Под проектом — только имя и возраст автора.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="filters">
+      <label>Курс
+        <select id="project-filter" data-event="project_view" data-filter-param="course_name">
+          <option value="all">Все курсы</option><option value="python">Python</option><option value="web">Веб</option><option value="gamedev">Игры на Godot</option><option value="ai">ИИ</option>
+        </select>
+      </label>
+    </div>
+    <div class="projects" id="project-list">
+      <button class="project" type="button" id="p01" data-course="gamedev"
+        data-event="project_view" data-project-id="p01" data-course-name="gamedev">
+        <img src="img/p01.webp" alt="Скриншот проекта «Космический тир»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">Игры на Godot</span>
+          <h3>Космический тир</h3>
+          <span class="project__author">Артём, 13 лет</span>
+          <span class="project__about" hidden>Корабль уворачивается от астероидов, каждые 30 секунд скорость растёт.</span>
+        </span>
+      </button>
+      <button class="project" type="button" id="p02" data-course="python"
+        data-event="project_view" data-project-id="p02" data-course-name="python">
+        <img src="img/p02.webp" alt="Скриншот проекта «Бот-напоминалка о домашке»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">Python</span>
+          <h3>Бот-напоминалка о домашке</h3>
+          <span class="project__author">Лиза, 15 лет</span>
+          <span class="project__about" hidden>Telegram-бот присылает список заданий на завтра и отмечает сделанные.</span>
+        </span>
+      </button>
+      <button class="project" type="button" id="p03" data-course="web"
+        data-event="project_view" data-project-id="p03" data-course-name="web">
+        <img src="img/p03.webp" alt="Скриншот проекта «Сайт-портфолио художника»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">Веб</span>
+          <h3>Сайт-портфолио художника</h3>
+          <span class="project__author">Ника, 16 лет</span>
+          <span class="project__about" hidden>Галерея рисунков с фильтром по темам, работает на телефоне.</span>
+        </span>
+      </button>
+      <button class="project" type="button" id="p04" data-course="ai"
+        data-event="project_view" data-project-id="p04" data-course-name="ai">
+        <img src="img/p04.webp" alt="Скриншот проекта «Угадай рисунок»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">ИИ</span>
+          <h3>Угадай рисунок</h3>
+          <span class="project__author">Миша, 15 лет</span>
+          <span class="project__about" hidden>Рисуешь мышкой, модель угадывает один из 10 предметов.</span>
+        </span>
+      </button>
+      <button class="project" type="button" id="p05" data-course="gamedev"
+        data-event="project_view" data-project-id="p05" data-course-name="gamedev">
+        <img src="img/p05.webp" alt="Скриншот проекта «Платформер «Кот и лазер»»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">Игры на Godot</span>
+          <h3>Платформер «Кот и лазер»</h3>
+          <span class="project__author">Соня, 12 лет</span>
+          <span class="project__about" hidden>Кот прыгает по крышам за лазерной точкой, 5 уровней и босс-пылесос.</span>
+        </span>
+      </button>
+      <button class="project" type="button" id="p06" data-course="web"
+        data-event="project_view" data-project-id="p06" data-course-name="web">
+        <img src="img/p06.webp" alt="Скриншот проекта «Трекер привычек»" width="640" height="400" loading="lazy">
+        <span class="project__body">
+          <span class="project__course">Веб</span>
+          <h3>Трекер привычек</h3>
+          <span class="project__author">Даня, 14 лет</span>
+          <span class="project__about" hidden>Отмечаешь привычки по дням, сайт рисует график серий.</span>
+        </span>
+      </button>
+    </div>
+    <p class="empty" id="project-empty" hidden>По этому курсу проектов пока нет — выберите другой.</p>
+  </div>
+</section>
+
+<section class="section section--paper" id="video">
+  <div class="wrap video-box">
+    <video controls preload="none" poster="img/video-poster.webp" width="960" height="540"
+      data-event="video_play" data-video-title="Кот и лазер — платформер на Godot">
+      <source src="files/kot-i-lazer.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div>
+      <h2>Видео проекта</h2>
+      <p>«Кот и лазер» — платформер Сони, 12 лет. Игру собрали за 2 месяца курса «Создание игр на Godot»: герой, прыжки, 5 уровней.</p>
+      <a class="btn btn--red" href="contacts.html?course=gamedev" data-event="cta_click" data-button-name="video_gamedev_trial" data-page-section="video">Хочу так же</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>БАЙТ-БЮРО</a>
+        <p style="margin-top:14px">Школа программирования для подростков 12–17 лет. Очно на ул. Инженерной и онлайн.</p>
+        <p>614 120, г. Новоозёрск, ул. Инженерная, д. 8, офис 31</p>
+      </div>
+      <div>
+        <h2>Связаться</h2>
+        <ul>
+          <li><a href="tel:+79007070101" data-event="contact_click" data-contact-type="phone">+7 (900) 707-01-01</a></li>
+          <li><a href="mailto:hello@bytebureau.example" data-event="contact_click" data-contact-type="email">hello@bytebureau.example</a></li>
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Мы в соцсетях</h2>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/bytebureau_school/" target="_blank" rel="noopener" aria-label="Instagram" data-event="social_click" data-network="instagram" data-page-section="footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.3 2.3 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.2 3.6 2.2 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.2-3.6-2.2-5.6-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1z"/></svg></a>
+          <a class="social" href="https://vk.com/bytebureau_school" target="_blank" rel="noopener" aria-label="ВКонтакте" data-event="social_click" data-network="vk" data-page-section="footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.8 17.5C6.6 17.5 3.1 13.3 3 6.5h3c.1 5 2.3 7.1 4.1 7.5V6.5H13v4.3c1.8-.2 3.6-2.2 4.3-4.3h2.8c-.5 2.6-2.4 4.6-3.8 5.4 1.4.7 3.6 2.4 4.4 5.6h-3.1c-.7-2.1-2.3-3.7-4.6-3.9v3.9h-.2z"/></svg></a>
+          <a class="social" href="https://t.me/bytebureau_parents" target="_blank" rel="noopener" aria-label="Telegram" data-event="social_click" data-network="telegram" data-page-section="footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 4.2 2.9 11.3c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.8-.4l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.4-1.5zM8.6 14l9.6-6.1c.5-.3.9-.1.5.2l-8 7.2-.3 3.4L8.6 14z"/></svg></a>
+          <a class="social" href="https://www.youtube.com/@bytebureau_school" target="_blank" rel="noopener" aria-label="YouTube" data-event="social_click" data-network="youtube" data-page-section="footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2C.5 9.1.5 12 .5 12s0 2.9.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8zM9.7 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ООО «Байт-Бюро». ИНН 9907553190, ОГРН 1229900053317</span>
+      <span>Учебный проект: организация и реквизиты вымышлены</span>
+    </div>
+  </div>
+</footer>
+<script src="js/analytics.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
