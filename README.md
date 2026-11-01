@@ -4,7 +4,7 @@
 
 | Что | Ссылка |
 |---|---|
-| Сайт на Vercel | https://tz-07-shkola-programmirovaniya-bayt-byuro.vercel.app |
+| Сайт на Vercel | file:///C:/Users/NiXiK/Desktop/Новая%20папка%20(2)/tz-07-shkola-programmirovaniya-bayt-byuro/index.html|
 | Таблица заявок «ByteBureau — Leads» | ___ |
 | Дашборд DataLens «БАЙТ-БЮРО — winter_camp_2026» | ___ |
 | Instagram | ___ |
